@@ -32,11 +32,11 @@ class Kohana_Twig_Environment
 			$twig = $instances[$env] = new Twig_Environment($loader, $config['environment']);
 
 			// Load extensions
-			foreach ($config['extensions'] as $extension)
+			/*foreach ($config['extensions'] as $extension)
 			{
 				$twig->addExtension(new $extension);
 			}
-
+                        */
 			// Add the sandboxing extension.
 			// The sandbox seems buggy
 			// So this dummy condition is there to avoid the bug
